@@ -14,7 +14,8 @@
 		"test": "tsc -p tsconfig-test.json && ava -v",
 		"build": "concurrently npm:build:*",
 		"build:cjs": "tsc -p tsconfig-cjs.json",
-		"build:es": "tsc -p tsconfig-es.json"
+		"build:es": "tsc -p tsconfig-es.json",
+		"prepack": "npm test && npm run build"
 	},
 	"devDependencies": {
 		"ava": "^3.15.0",
