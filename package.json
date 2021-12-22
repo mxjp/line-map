@@ -1,5 +1,5 @@
 {
-	"name": "line-map",
+	"name": "@mpt/line-map",
 	"version": "1.0.0",
 	"description": "Convert between line/column and offsets",
 	"author": "Max J. Polster",

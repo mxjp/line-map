@@ -1,4 +1,4 @@
-# `line-map`
+# @mpt/line-map
 Convert between lines/columns and offsets.
 
 ## Why?
@@ -16,7 +16,7 @@ Convert between lines/columns and offsets.
 
 ## Usage
 ```ts
-import { LineMap } from "line-map";
+import { LineMap } from "@mpt/line-map";
 
 const map = new LineMap("\n  Hello World!\n");
 
