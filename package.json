@@ -1,8 +1,10 @@
 {
 	"name": "line-map",
+	"version": "1.0.0",
 	"description": "Convert between line/column and offsets",
 	"author": "Max J. Polster",
 	"keywords": ["line", "column", "character", "offset", "index", "vscode", "parser"],
+	"repository": "https://github.com/mxjp/line-map.git",
 	"license": "MIT",
 	"main": "./dist/cjs/index.js",
 	"module": "./dist/es/index.js",
