@@ -1,0 +1,23 @@
+{
+	"name": "line-map",
+	"description": "Convert between line/column and offsets",
+	"author": "Max J. Polster",
+	"keywords": ["line", "column", "character", "offset", "index", "vscode", "parser"],
+	"license": "MIT",
+	"main": "./dist/cjs/index.js",
+	"module": "./dist/es/index.js",
+	"scripts": {
+		"clean": "rimraf ./dist/**/* ./test_out/**/*",
+		"start": "npm run clean && tsc -p tsconfig-test.json && concurrently \"tsc -p tsconfig-test.json -w\" \"ava -v -w\"",
+		"test": "tsc -p tsconfig-test.json && ava -v",
+		"build": "concurrently npm:build:*",
+		"build:cjs": "tsc -p tsconfig-cjs.json",
+		"build:es": "tsc -p tsconfig-es.json"
+	},
+	"devDependencies": {
+		"ava": "^3.15.0",
+		"concurrently": "^6.4.0",
+		"rimraf": "^3.0.2",
+		"typescript": "^4.5.2"
+	}
+}
